@@ -1,0 +1,95 @@
+:root {
+    --main-bg : #424441;
+    --sec-bg : #d3d6d0;
+}
+
+body {
+    background: var(--main-bg);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--main-bg);
+    margin-top: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: var(--sec-bg);
+    align-items: center;
+    height: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inputs label {
+    display: block;
+}
+
+.inputs input[type=number] {
+    width: 10rem;
+    margin-right: .6rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form > button {
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-top: .6rem;
+    color: var(--sec-bg);
+    background: var(--main-bg);
+    opacity: .8;
+}
+
+form > button:hover {
+    opacity: 1;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+}
+
+.resultado label {
+    margin: 1rem;
+}
+
+.resultado input[type=number] {
+    display: inline-block;
+    height: 2rem;
+}
+
+table {
+    margin-top: 2rem;
+    border: 1px solid var(--main-bg);
+}
+
+table thead td {
+    color: var(--main-bg);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+
+table tbody td {
+    font-size: 1rem;
+    text-align: center;
+}
